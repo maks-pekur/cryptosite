@@ -12,7 +12,7 @@ const Market = () => {
           <div className="text-[#6c5ce7] text-xl uppercase mb-4">MARKET</div>
           <motion.h3
             whileInView={{ x: 0 }}
-            animate={{ x: 700 }}
+            animate={{ x: "100%" }}
             transition={{ duration: 1.2 }}
             className="text-5xl text-center mb-10 lg:mb-20"
           >
