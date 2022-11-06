@@ -3,8 +3,17 @@ import logo from "../assets/logo.png";
 import { Squash as Hamburger } from "hamburger-react";
 import { navLinks } from "../constants";
 import { Link } from "react-scroll";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false);
+  const [isOpen, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+    setOpen(!isOpen);
+  };
+
   return (
     <nav className="border-bottom-2 fixed top-0 left-0 w-full bg-[#070416] z-50">
       <div className="max-w-6xl m-auto flex items-center justify-between py-5 px-2">
@@ -32,9 +41,29 @@ const Navbar = () => {
             </button>
           </ul>
         </div>
-        <div className="md:hidden">
-          <Hamburger />
+        <div className="md:hidden" onClick={() => setActive(!active)}>
+          <Hamburger toggled={isOpen} toggle={setOpen} />
         </div>
+        {active && (
+          <div className="fixed top-20 left-0 bottom-0 right-0 bg-violet-800 z-50">
+            <ul className="flex flex-col items-center justify-center space-y-6 h-full text-2xl">
+              {navLinks.map(({ id, title, link }) => (
+                <Link
+                  className="cursor-pointer"
+                  to={link}
+                  key={id}
+                  spy={true}
+                  smooth={true}
+                  offset={-90}
+                  duration={300}
+                  onClick={handleClick}
+                >
+                  {title}
+                </Link>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );
