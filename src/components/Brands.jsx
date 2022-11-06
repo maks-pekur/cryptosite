@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Brands = () => {
   return (
-    <div className="px-4">
+    <div className="px-4 max-w-5xl m-auto w-full ">
       <div
         style={{ backgroundImage: `url(${brandsBg})` }}
         className="max-w-6xl bg-no-repeat m-auto rounded-xl grid grid-cols-2 gap-10 p-8"

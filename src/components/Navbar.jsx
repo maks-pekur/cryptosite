@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="border-bottom-2 sticky top-0 bg-[#070416] z-50">
+    <nav className="border-bottom-2 fixed top-0 left-0 w-full bg-[#070416] z-50">
       <div className="max-w-6xl m-auto flex items-center justify-between py-5 px-2">
         <div>
           <img src={logo} alt="logo" />
@@ -15,6 +15,7 @@ const Navbar = () => {
           <ul className="flex items-center space-x-6">
             {navLinks.map(({ id, title, link }) => (
               <Link
+                className="cursor-pointer"
                 activeClass="nav-active"
                 to={link}
                 key={id}

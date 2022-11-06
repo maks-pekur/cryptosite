@@ -10,7 +10,7 @@ const Home = () => {
     <div style={{ backgroundImage: `url(${bg})` }}>
       <div
         id="home"
-        className="max-w-7xl m-auto px-4 lg:h-screen w-full overflow-hidden"
+        className="max-w-7xl m-auto px-4 h-[100vh] pt-20 overflow-hidden lg:pt-10"
       >
         <div className="flex flex-col lg:flex-row lg:items-center">
           <motion.div
@@ -54,9 +54,9 @@ const Home = () => {
               initial={{ y: 700 }}
               animate={{ y: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full flex justify-end"
+              className="w-full flex justify-end lg:pt-10"
             >
-              <img src={phone} alt="phone" className="object-contain" />
+              <img src={phone} alt="phone" className="object-contain scale-125 lg:scale-110" />
             </motion.div>
           </div>
         </div>

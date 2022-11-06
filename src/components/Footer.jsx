@@ -45,7 +45,7 @@ const Footer = () => {
           <p className="mb-6">
             Get now free 20% discount for all products on your first order
           </p>
-          <div className="flex justify-between p-2 rounded-full bg-gray-900 ">
+          <div className="flex justify-between p-2 rounded-full bg-gray-900 mb-8">
             <input
               type="text"
               placeholder="Enter E-mail"
@@ -57,17 +57,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-around py-3">
+      <div className="text-center py-4">
         <div>
           © Cryptobit all Rights Reserved. By{" "}
           <span className="text-violet-700 font-bold">Pekur Maks</span>
         </div>
-        <button className="hover:text-violet-700 transition">
-          Privacy Policy
-        </button>
-        <button className="hover:text-violet-700 transition">
-          Terms & Condition
-        </button>
       </div>
     </footer>
   );

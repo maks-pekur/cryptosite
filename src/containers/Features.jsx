@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 
 const Features = () => {
   return (
-    <div style={{ backgroundImage: `url(${bg})` }}>
+    <div id="features" style={{ backgroundImage: `url(${bg})` }}>
       <div className="max-w-7xl m-auto px-4 lg:h-screen w-full overflow-hidden py-10">
         <div className="text-[#6c5ce7] text-xl uppercase text-center mb-6">
           FEAUTERS
         </div>
         <motion.h3
           whileInView={{ x: 0 }}
-          animate={{ x: 700 }}
+          animate={{ x: "100%" }}
           transition={{ duration: 1.2 }}
           className="text-5xl text-center mb-10 lg:mb-20"
         >

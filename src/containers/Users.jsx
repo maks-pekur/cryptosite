@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 
 const Users = () => {
   return (
-    <div id="users" className="max-w-7xl m-auto py-10 px-4 lg:h-screen">
+    <div
+      id="users"
+      className="max-w-7xl m-auto py-10 px-4 lg:h-screen overflow-hidden"
+    >
       <div className="text-[#6c5ce7] text-xl uppercase">USERS</div>
       <div className="grid lg:grid-cols-2 gap-6">
         <div className="my-10 lg:mt-20 img-anim-updown">
