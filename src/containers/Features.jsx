@@ -21,8 +21,8 @@ const Features = () => {
         <div className="grid gap-10 lg:grid-cols-3">
           {features.map(({ id, title, description, icon }) => (
             <motion.div
-              whileInView={{ x: 0 }}
-              animate={{ x: -500 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              animate={{ opacity: 0, scale: 0.3 }}
               transition={{ duration: 1 }}
               key={id}
               className="flex flex-col items-center rounded-lg p-10 relative"

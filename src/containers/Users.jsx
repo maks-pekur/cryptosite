@@ -14,7 +14,7 @@ const Users = () => {
         </div>
         <motion.div
           whileInView={{ x: 0 }}
-          animate={{ x: 700 }}
+          animate={{ x: "100%" }}
           transition={{ duration: 1.2 }}
           className="space-y-8"
         >
