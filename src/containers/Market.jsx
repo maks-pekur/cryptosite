@@ -21,7 +21,7 @@ const Market = () => {
         </div>
         <motion.div
           whileInView={{ x: 0 }}
-          animate={{ x: -700 }}
+          animate={{ x: "-100%" }}
           transition={{ duration: 1.2 }}
           className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 text-xl p-6"
         >

@@ -7,7 +7,7 @@ const Team = () => {
     <div id="team" className="max-w-7xl m-auto py-10">
       <motion.h3
         whileInView={{ x: 0 }}
-        animate={{ x: 700 }}
+        animate={{ x: "100%" }}
         transition={{ duration: 1.2 }}
         className="text-5xl text-center mb-10 lg:mb-20"
       >
